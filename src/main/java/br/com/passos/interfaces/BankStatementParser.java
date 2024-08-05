@@ -1,4 +1,6 @@
-package br.com.passos;
+package br.com.passos.interfaces;
+
+import br.com.passos.BankTransaction;
 
 import java.util.List;
 

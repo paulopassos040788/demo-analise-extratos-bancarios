@@ -1,5 +1,5 @@
-import br.com.passos.BankStatementCSVParser;
-import br.com.passos.BankStatementParser;
+import br.com.passos.interfaces.impl.BankStatementCSVParser;
+import br.com.passos.interfaces.BankStatementParser;
 import br.com.passos.BankTransaction;
 import org.junit.Assert;
 import org.junit.Test;
@@ -8,7 +8,7 @@ import java.time.Month;
 
 public class BankTransactionCSVParserTest {
 
-    private BankStatementParser statementParser = new BankStatementCSVParser();
+    private final BankStatementParser statementParser = new BankStatementCSVParser();
 
     @Test
     public void deveAnalisarUmaLinhaCorreta() throws Exception {

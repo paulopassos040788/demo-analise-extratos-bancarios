@@ -1,5 +1,8 @@
 package br.com.passos;
 
+import br.com.passos.interfaces.BankStatementParser;
+import br.com.passos.interfaces.impl.BankTransactionIsInFebruaryAndExpensive;
+
 import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
@@ -28,6 +31,8 @@ public class BankStatementAnalyzer {
                 + bankStatementProcessor.calculateTotalMonth(Month.FEBRUARY));
         System.out.println("O salário total recebido é "
                 + bankStatementProcessor.calculateTotalForCategory("Salary"));
+
+        System.out.println("Transações de fevereiro acima ou igual 1000 " +bankStatementProcessor.findTransactions(new BankTransactionIsInFebruaryAndExpensive()));
     }
 
 }

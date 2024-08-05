@@ -1,11 +1,14 @@
-package br.com.passos;
+package br.com.passos.interfaces.impl;
+
+import br.com.passos.BankTransaction;
+import br.com.passos.interfaces.BankStatementParser;
 
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
 import java.util.List;
 import java.util.stream.Collectors;
 
-public class BankStatementCSVParser implements BankStatementParser{
+public class BankStatementCSVParser implements BankStatementParser {
 
     private static final DateTimeFormatter DATE_PATTERN = DateTimeFormatter.ofPattern("dd-MM-yyyy");
 

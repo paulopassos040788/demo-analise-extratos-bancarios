@@ -1,5 +1,8 @@
 package br.com.passos;
 
+import br.com.passos.interfaces.BankStatementParser;
+import br.com.passos.interfaces.impl.BankStatementCSVParser;
+
 public class Main {
 
     public static void main(String[] args) throws Exception{
